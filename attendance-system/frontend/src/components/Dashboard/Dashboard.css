@@ -1,0 +1,156 @@
+.dashboard {
+  padding: 20px;
+}
+
+.dashboard-date {
+  color: #757575;
+  font-size: 14px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-left: 4px solid;
+}
+
+.stat-primary {
+  border-left-color: #2196F3;
+}
+
+.stat-success {
+  border-left-color: #4CAF50;
+}
+
+.stat-info {
+  border-left-color: #00BCD4;
+}
+
+.stat-warning {
+  border-left-color: #FF9800;
+}
+
+.stat-icon {
+  font-size: 40px;
+  opacity: 0.8;
+}
+
+.stat-info h3 {
+  font-size: 32px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.stat-info p {
+  color: #757575;
+  font-size: 14px;
+}
+
+.attendance-summary {
+  margin-top: 20px;
+}
+
+.summary-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.summary-label {
+  color: #757575;
+  font-size: 14px;
+}
+
+.summary-value {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.summary-value.success {
+  color: #4CAF50;
+}
+
+.summary-value.danger {
+  color: #f44336;
+}
+
+.summary-value.warning {
+  color: #FF9800;
+}
+
+.summary-value.info {
+  color: #00BCD4;
+}
+
+.quick-actions {
+  margin-top: 30px;
+}
+
+.quick-actions h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.action-btn {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #333;
+}
+
+.action-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.action-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.action-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .action-buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
